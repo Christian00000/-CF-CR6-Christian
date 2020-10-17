@@ -49,8 +49,8 @@ var Restaurants = /** @class */ (function (_super) {
     return Restaurants;
 }(Locations));
 // here get the class filled with new objects....place to add new restaurants
-new Restaurants("Lemon Leaf Thai Restaurant", "/img/restaurant.png", "Schönbrunner Straße 21", "Vienna", "1050", "+43(1)5812308", "Thai- Restaurant", "http://www.lemonleaf.at");
-new Restaurants("SIXTA", "/img/sixta.png", "Kettenbrückengasse 19", "Vienna", "1050", "+43 1 58 528 56", "Traditional Restaurant", "http://www.sixta-restaurant.at");
+new Restaurants("Lemon Leaf Thai Restaurant", "img/restaurant.png", "Schönbrunner Straße 21", "Vienna", "1050", "+43(1)5812308", "Thai- Restaurant", "http://www.lemonleaf.at");
+new Restaurants("SIXTA", "img/sixta.png", "Kettenbrückengasse 19", "Vienna", "1050", "+43 1 58 528 56", "Traditional Restaurant", "http://www.sixta-restaurant.at");
 // extention Events
 var Events = /** @class */ (function (_super) {
     __extends(Events, _super);
@@ -68,8 +68,8 @@ var Events = /** @class */ (function (_super) {
     return Events;
 }(Locations));
 // here get the class filled with new objects....place to add new events
-new Events("Kris Kristofferson", "/img/kris.jpg", "Wiener Stadthalle, Halle F, Roland Rainer Platz 1", "Vienna", "1150", "Fr 15.11.2021", "20:00", "€ 58,50", "http://www.kriskristofferson.com");
-new Events("Lenny Krawitz", "/img/lenny.jpg", "Wiener Stadthalle - Halle D, Roland Rainer Platz 1", "Vienna", "1150", "Sat 09.12.2021", "19:30", "€ 47,80", "http://www.lennykravitz.com");
+new Events("Kris Kristofferson", "img/kris.jpg", "Wiener Stadthalle, Halle F, Roland Rainer Platz 1", "Vienna", "1150", "Fr 15.11.2021", "20:00", "€ 58,50", "http://www.kriskristofferson.com");
+new Events("Lenny Krawitz", "img/lenny.jpg", "Wiener Stadthalle - Halle D, Roland Rainer Platz 1", "Vienna", "1150", "Sat 09.12.2021", "19:30", "€ 47,80", "http://www.lennykravitz.com");
 // here is the loop to render
 for (var i in travelArr) {
     document.getElementById("content").innerHTML += travelArr[i].render();
